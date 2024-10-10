@@ -4,16 +4,15 @@
 int main() {
     double start, end, step;
     std::cout << "Введите начальное значение x: ";
-    std::cin >> start; // Ввод начального значения переменной
+    std::cin >> start;
     std::cout << "Введите конечное значение x: ";
-    std::cin >> end; // Ввод конечного значения переменной
+    std::cin >> end;
     std::cout << "Введите шаг: ";
-    std::cin >> step; // Ввод шага изменения аргумента
+    std::cin >> step;
 
     for (double x = start; x <= end; x += step) {
-        double y = sin(x); // Вычисление функции y = sin(x)
-        std::cout << x << " | " << y << std::endl; // Вывод значений функции
+        double y = sin(x); // функция sin(x)
+        std::cout << x << " | " << y << std::endl;
     }
-
     return 0;
 }
